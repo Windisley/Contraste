@@ -86,7 +86,7 @@ body{
     cursor: pointer;
     border-radius: 12px;
     font-weight: 600;
-    color: white;
+    color: black;
     transition: all .3s ease-in-out;
 
 }
@@ -105,7 +105,7 @@ body{
 .container section main .box-content .button{
     background-color: var(--background-red);
     border:1px solid var(--primary-red);
-
+    color: white;
 
 }
 
