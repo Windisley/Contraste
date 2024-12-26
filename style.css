@@ -1,7 +1,115 @@
 :root{
-    --background-red: #8C031C;
+    --background-red: rgb(140, 3, 28);
     --primary-red: #F20F38;
+    --background-rgb: rgb(140, 3, 28, .9);
     --contrast:#18F540;
     --shadow-contrast: #3FB554;
     --text: #0D0D0D;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #f1f1f1;
+
+}
+
+.container section{
+    width: 100%;
+    min-height: 100dvh;
+    margin: 0 auto;
+}
+
+.container section main{
+    width: 90%;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-image: linear-gradient( rgb(140, 3, 28, .8), rgb(140, 3, 28, .8)), url("./imgs/seo.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.container section main .box-content{
+    width: 98%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container section main .box-content h1{
+    font-size: 2rem;
+}
+
+
+.container section main .box-content h1, p{
+   width: 100%;
+   margin: 0 auto;
+   text-transform: capitalize;
+   text-align: left;
+   letter-spacing: .8px;
+   color: white;
+
+
+}
+
+.container section main .box-content button{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    transition: all .3s ease-in-out;
+
+}
+
+.container section main .box-content button:hover{
+    transform: translateY(-5px);
+}
+
+.container section main .box-content .button-contrast{
+    background-color: var(--contrast);
+    border:1px solid var(--shadow-contrast);
+
+
+}
+
+.container section main .box-content .button{
+    background-color: var(--background-red);
+    border:1px solid var(--primary-red);
+
+
+}
+
+
+
+
+
